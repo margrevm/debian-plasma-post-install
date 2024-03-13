@@ -44,6 +44,7 @@ APT_INSTALL_PACKAGES=(
 	xclip
 	less
 	ttf-mscorefonts-installer
+	plasma-bigscreen
 	#libnotify-bin
 	#code
 )
