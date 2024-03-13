@@ -1,13 +1,6 @@
 #!/usr/bin/env bash
 
-#  ___         _                   
-# (  _ \      ( )    _             
-# | | ) |  __ | |_  (_)  _ _  ___  
-# | | | )/ __ \  _ \| |/ _  )  _  \
-# | |_) |  ___/ |_) ) | (_| | ( ) |
-# (____/ \____)_ __/(_)\__ _)_) (_)
-                                 
-# Post-installation script for Debian 12.5 (KDE Plasma) & Plasma Bigscreen
+# Post-installation script for Kubuntu 22.04 (KDE Plasma) & Plasma Bigscreen
 
 # ---------------------------------------------------
 # Creating folder structure
@@ -90,7 +83,6 @@ sudo apt autoclean -q
 echo "[Installing flatpak packages]"
 
 FLATPAK_INSTALL_PACKAGES=(
-	com.spotify.Client
 	com.stremio.Stremio
 )
 
@@ -111,6 +103,7 @@ echo "[Installing snap packages]"
 # Important: Install 'snapd' to support snap packages (available as apt package).
 # Snap is not natively supported by Pop!_OS. The usage of flatpak is recommended.
 SNAP_INSTALL_PACKAGES=(
+	spotify
 )
 
 echo "➜ Install snap packages..."
