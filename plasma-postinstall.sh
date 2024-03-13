@@ -26,32 +26,22 @@ mkdir -pv ${CREATE_DIRS[@]}
 echo "[Installing apt packages]"
 
 APT_INSTALL_PACKAGES=(
+	flatpack
 	tree
 	neofetch
 	snapd
 	htop
-	#python3
-	#python3-distutils
-	#nmap
 	wget
-	#default-jdk
-	#default-jre
 	heif-gdk-pixbuf
-	#codium
-	#git
 	curl
 	unzip
 	xclip
 	less
-	ttf-mscorefonts-installer
 	plasma-bigscreen
-	#libnotify-bin
-	#code
 )
 
 # Danger zone /!\ Please be careful and make sure to not purge/remove any essential packages
 APT_PURGE_PACKAGES=(
-	geary
 )
 
 APT_REMOVE_PACKAGES=(
