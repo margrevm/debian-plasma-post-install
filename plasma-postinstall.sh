@@ -42,7 +42,7 @@ APT_REMOVE_PACKAGES=(
 )
 
 #echo "➜ Adding apt repositories..."
-# Nothing yet
+sudo add-apt-repository ppa:kubuntu-ppa/backports-extra 
 
 echo "➜ Updating apt repositories..."
 sudo apt update -yq
