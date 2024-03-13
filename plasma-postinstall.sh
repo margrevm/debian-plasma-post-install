@@ -155,6 +155,4 @@ neofetch
 echo "[Installation completed!]"
 cd $HOME
 
-# Reminders
-# open github website to remind me to set up github
-# firefox https://github.com
+# Enable auto-login (https://www.simplified.guide/kde/automatic-login)
