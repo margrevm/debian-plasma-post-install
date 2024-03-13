@@ -41,7 +41,7 @@ APT_PURGE_PACKAGES=(
 APT_REMOVE_PACKAGES=(
 )
 
-#echo "➜ Adding apt repositories..."
+echo "➜ Adding apt repositories..."
 sudo add-apt-repository ppa:kubuntu-ppa/backports-extra 
 
 echo "➜ Updating apt repositories..."
@@ -108,9 +108,6 @@ SNAP_INSTALL_PACKAGES=(
 
 echo "➜ Install snap packages..."
 snap install ${SNAP_INSTALL_PACKAGES[@]}
-
-echo "➜ Update snap packages..."
-snap update
 
 # ---------------------------------------------------
 # .deb packages installation (manual)
