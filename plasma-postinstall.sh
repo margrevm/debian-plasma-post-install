@@ -26,7 +26,8 @@ mkdir -pv ${CREATE_DIRS[@]}
 echo "[Installing apt packages]"
 
 APT_INSTALL_PACKAGES=(
-	flatpack
+	flatpak
+ 	plasma-discover-backend-flatpak
 	tree
 	neofetch
 	snapd
